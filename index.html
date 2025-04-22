@@ -1,0 +1,54 @@
+<!-- <html>
+    <head>
+      <title>ABC</title>
+      <script src="fabric.js"></script>
+      <link rel="stylesheet" href="style.css" >
+
+      
+      
+    </head>
+    
+    <body class="body" >
+     
+     
+      <center>
+        <h2>Learn With ABC</h2>
+        <h3>Press any alphabet on keyboard.</h3>
+        <canvas width="800" height="400" id="c"></canvas> 
+        <br>
+  
+      </center>
+      <script src="main.js"> </script>
+    </body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.6.0/fabric.min.js"></script>
+  <style> canvas { border: 1px solid #ccc; } </style>
+</head>
+<body>
+  <canvas id="c" width="600" height="400"></canvas>
+  <script>
+    var canvas = new fabric.Canvas('c');
+
+    // Use an online image URL here:
+    var imageUrl = 'https://www.shutterstock.com/image-vector/doraemon-cute-hand-drawn-illustration-600nw-2352837563.jpg';
+
+    fabric.Image.fromURL(imageUrl, function(img) {
+      img.set({
+        left: 50,
+        top: 50,
+        scaleX: 0.5,
+        scaleY: 0.5
+      });
+      canvas.add(img);
+    }, {
+      crossOrigin: 'anonymous'  // ensure CORS headers are in place on the server
+    });
+  </script>
+</body>
+</html>

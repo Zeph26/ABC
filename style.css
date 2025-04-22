@@ -1,0 +1,28 @@
+.body{
+    background-image: url("abc.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+h3{
+    background-color: aliceblue;
+    color: rgb(49, 49, 175);
+    width:400px;
+}
+
+h2{
+    background-color: rgb(49, 49, 175);
+    width: 280px;
+    height: 40px;
+    color: yellow;
+    text-decoration: underline;
+}
+
+canvas{
+    background-color: white;
+    border-width: 10px;
+    border-style: groove;
+    
+}
+
